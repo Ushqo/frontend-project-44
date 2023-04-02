@@ -10,7 +10,7 @@ $ npm link
 
 [![asciicast](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol.svg)](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol)
 
-#### Installation
+#### Even or Odd
 
 ```sh
 $ brain-even
