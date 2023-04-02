@@ -9,4 +9,4 @@ const greetingUser = () => {
   console.log(`Hello, ${askUserName()}!`);
 };
 
-export default { greetingUser };
+export default greetingUser;
