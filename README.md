@@ -10,10 +10,24 @@ $ npm link
 
 [![asciicast](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol.svg)](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol)
 
+### Launch
+****
+
 #### Even or Odd
+****
 
 ```sh
 $ brain-even
 ```
 
 [![asciicast](https://asciinema.org/a/LFYmAuuDMQYDwmoMaZVYPDD2P.svg)](https://asciinema.org/a/LFYmAuuDMQYDwmoMaZVYPDD2P)
+
+#### Even or Odd
+****
+
+```sh
+$ brain-calc
+```
+
+[![asciicast](https://asciinema.org/a/K55UxcTHoywXyFJiDcxgx4Y5W.svg)](https://asciinema.org/a/K55UxcTHoywXyFJiDcxgx4Y5W)
+[![asciicast](https://asciinema.org/a/m7U7kkKdSy5Ry2bXqSukgQwjr.svg)](https://asciinema.org/a/m7U7kkKdSy5Ry2bXqSukgQwjr)
