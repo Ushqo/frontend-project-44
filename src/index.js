@@ -13,7 +13,7 @@ const greetingUser = (userName) => {
   console.log(`Hello, ${userName}!`);
 };
 
-// Функция возвращает случайное число от 0 до 100;
+// Функция возвращает случайное число в заданном интервале
 const getRandomNumber = (min, max) => {
   const randomNumber = Math.floor(Math.random() * (max - min) + min);
   return randomNumber;

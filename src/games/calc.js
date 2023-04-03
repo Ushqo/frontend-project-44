@@ -41,7 +41,7 @@ const startGame = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNumber1 = getRandomNumber(0, 100);
     const randomNumber2 = getRandomNumber(0, 100);
-    const operator = operators[getRandomNumber(0, operators.length - 1)];
+    const operator = operators[getRandomNumber(0, operators.length)];
     console.log(`Question: ${showExpression(randomNumber1, randomNumber2, operator)}`);
     const userAnswer = Number(getUserAnswer());
     const correctAnswer = getResultOfExpression(randomNumber1, randomNumber2, operator);
