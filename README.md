@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/Ushqo/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Ushqo/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/39883ad115954a7af4ac/maintainability)](https://codeclimate.com/github/Ushqo/frontend-project-44/maintainability)
 
-#### Installation
+### Installation
 
 ```sh
 $ npm link
@@ -11,9 +11,8 @@ $ npm link
 [![asciicast](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol.svg)](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol)
 
 ### Launch
-****
 
-#### Even or Odd
+#### Brain-even
 ****
 
 ```sh
@@ -22,7 +21,7 @@ $ brain-even
 
 [![asciicast](https://asciinema.org/a/LFYmAuuDMQYDwmoMaZVYPDD2P.svg)](https://asciinema.org/a/LFYmAuuDMQYDwmoMaZVYPDD2P)
 
-#### Even or Odd
+#### Brain-Cal
 ****
 
 ```sh
