@@ -14,9 +14,9 @@ const greetingUser = (userName) => {
 };
 
 // Функция возвращает случайное число от 0 до 100;
-const getRandomNumber = () => {
-  const number = Math.floor(Math.random() * 100);
-  return number;
+const getRandomNumber = (min, max) => {
+  const randomNumber = Math.floor(Math.random() * (max - min) + min);
+  return randomNumber;
 };
 
 // Функция запроса ответа от пользователя

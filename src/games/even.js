@@ -42,7 +42,7 @@ const startGame = () => {
   console.log(gameRules);
 
   for (let i = 0; i < 3; i += 1) {
-    const randomNumber = getRandomNumber();
+    const randomNumber = getRandomNumber(0, 100);
     console.log(`Question: ${randomNumber}`);
     const userAnswer = getUserAnswer();
     if (checkCorrectnessOfUserAnswer(userAnswer, userName)) {
