@@ -1,5 +1,17 @@
 import readlineSync from 'readline-sync';
-import { greetingUser, userName } from './cli.js';
+
+const welcomeMessage = 'Welcome to the Brain Games!';
+
+// Функция спрашивает и возвращает имя пользователя
+const getUserName = () => {
+  const userName = readlineSync.question('May I have your name? ');
+  return userName;
+};
+
+// Функция приветствует пользователя по имени
+const greetingUser = (userName) => {
+  console.log(`Hello, ${userName}!`);
+};
 
 // Функция возвращает случайное число в заданном интервале
 const getRandomNumber = (min, max) => {
@@ -13,40 +25,30 @@ const getUserAnswer = () => {
   return userAnswer;
 };
 
-// Отдельная функция на верность формата ввода ответа пользователя
-const checkCorrectnessOfUserAnswer = (userAnswer, name) => {
-  if ((userAnswer !== 'yes') && (userAnswer !== 'no')) {
-    console.log('Not correct answer! You must answer "yes" or "no"!');
-    console.log(`Let's try again, ${name}`);
-    return true;
-  }
-  return false;
-};
-
 // Функция проверки ответа пользователя и реакции на его ответ
-const checkUserAnswer = (userAnswer, correctAnswer, name) => {
+const checkUserAnswer = (userAnswer, correctAnswer, userName) => {
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
     return true;
   }
   console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-  console.log(`Let's try again, ${name}`);
+  console.log(`Let's try again, ${userName}`);
   return false;
 };
 
 // Функция счётчик с поздравлениями
-const counterOfIterations = (iteration, name) => {
+const counterOfIterations = (iteration, userName) => {
   if (iteration === 2) {
-    console.log(`Congratulations, ${name}!`);
+    console.log(`Congratulations, ${userName}!`);
   }
 };
 
 export {
-  userName,
+  welcomeMessage,
+  getUserName,
   greetingUser,
   getRandomNumber,
   getUserAnswer,
-  checkCorrectnessOfUserAnswer,
   checkUserAnswer,
   counterOfIterations,
 };

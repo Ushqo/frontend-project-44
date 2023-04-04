@@ -1,5 +1,6 @@
 import {
-  userName,
+  welcomeMessage,
+  getUserName,
   greetingUser,
   getRandomNumber,
   getUserAnswer,
@@ -32,6 +33,8 @@ const showExpression = (progression, indexOfHiddenNumber) => {
 
 // Сама игра
 const startGame = () => {
+  console.log(welcomeMessage);
+  const userName = getUserName();
   greetingUser(userName);
   console.log(gameRules);
 
