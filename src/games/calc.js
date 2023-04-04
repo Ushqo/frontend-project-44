@@ -1,6 +1,5 @@
 import {
-  welcomeMessage,
-  getUserName,
+  userName,
   greetingUser,
   getRandomNumber,
   getUserAnswer,
@@ -33,8 +32,6 @@ const showExpression = (number1, number2, operator) => {
 
 // Сама игра
 const startGame = () => {
-  console.log(welcomeMessage);
-  const userName = getUserName();
   greetingUser(userName);
   console.log(gameRules);
 

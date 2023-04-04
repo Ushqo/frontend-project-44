@@ -1,9 +1,9 @@
 import {
-  welcomeMessage,
-  getUserName,
+  userName,
   greetingUser,
   getRandomNumber,
   getUserAnswer,
+  checkCorrectnessOfUserAnswer,
   checkUserAnswer,
   counterOfIterations,
 } from '../index.js';
@@ -34,20 +34,8 @@ const getCorrectAnswer = (randomNumber) => {
   return 'no';
 };
 
-// Отдельная функция на верность формата ввода ответа пользователя
-const checkCorrectnessOfUserAnswer = (userAnswer, userName) => {
-  if ((userAnswer !== 'yes') && (userAnswer !== 'no')) {
-    console.log('Not correct answer! You must answer "yes" or "no"!');
-    console.log(`Let's try again, ${userName}`);
-    return true;
-  }
-  return false;
-};
-
 // Сама игра
 const startGame = () => {
-  console.log(welcomeMessage);
-  const userName = getUserName();
   greetingUser(userName);
   console.log(gameRules);
 
