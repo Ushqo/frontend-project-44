@@ -38,5 +38,5 @@ $ brain-calc
 $ brain-gcd
 ```
 
-[![asciicast](https://asciinema.org/a/eMtxTanhiqIS3Klj1ozxl1ASp.svg)](https://asciinema.org/a/eMtxTanhiqIS3Klj1ozxl1ASp)
+[![asciicast](https://asciinema.org/a/2iNatcRSiaGxxXlwsgoWJQTCS.svg)](https://asciinema.org/a/2iNatcRSiaGxxXlwsgoWJQTCS)
 [![asciicast](https://asciinema.org/a/Qs8m3XXnb654w9petJYOOqks8.svg)](https://asciinema.org/a/Qs8m3XXnb654w9petJYOOqks8)
