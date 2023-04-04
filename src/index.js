@@ -25,6 +25,16 @@ const getUserAnswer = () => {
   return userAnswer;
 };
 
+// Отдельная функция на верность формата ввода ответа пользователя
+const checkCorrectnessOfUserAnswer = (userAnswer, userName) => {
+  if ((userAnswer !== 'yes') && (userAnswer !== 'no')) {
+    console.log('Not correct answer! You must answer "yes" or "no"!');
+    console.log(`Let's try again, ${userName}`);
+    return true;
+  }
+  return false;
+};
+
 // Функция проверки ответа пользователя и реакции на его ответ
 const checkUserAnswer = (userAnswer, correctAnswer, userName) => {
   if (userAnswer === correctAnswer) {
@@ -49,6 +59,7 @@ export {
   greetingUser,
   getRandomNumber,
   getUserAnswer,
+  checkCorrectnessOfUserAnswer,
   checkUserAnswer,
   counterOfIterations,
 };
