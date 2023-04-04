@@ -40,3 +40,13 @@ $ brain-gcd
 
 [![asciicast](https://asciinema.org/a/2iNatcRSiaGxxXlwsgoWJQTCS.svg)](https://asciinema.org/a/2iNatcRSiaGxxXlwsgoWJQTCS)
 [![asciicast](https://asciinema.org/a/Qs8m3XXnb654w9petJYOOqks8.svg)](https://asciinema.org/a/Qs8m3XXnb654w9petJYOOqks8)
+
+#### Brain-progression
+****
+
+```sh
+$ brain-progression
+```
+
+[![asciicast](https://asciinema.org/a/dwhtevThtFgLunN3hckhWbwyy.svg)](https://asciinema.org/a/dwhtevThtFgLunN3hckhWbwyy)
+[![asciicast](https://asciinema.org/a/g9Mr9n4ubZfiRzI0TcVHWvfyD.svg)](https://asciinema.org/a/g9Mr9n4ubZfiRzI0TcVHWvfyD)
