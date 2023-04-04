@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const welcomeMessage = 'Welcome to the Brain Games!';
-
 // Функция спрашивает и возвращает имя пользователя
 const getUserName = () => {
   const userName = readlineSync.question('May I have your name? ');
@@ -46,6 +44,14 @@ const checkUserAnswer = (userAnswer, correctAnswer, userName) => {
   return false;
 };
 
+const showStartingMessage = (rules) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = getUserName();
+  greetingUser(userName);
+  console.log(rules);
+  return userName;
+};
+
 // Функция счётчик с поздравлениями
 const counterOfIterations = (iteration, userName) => {
   if (iteration === 2) {
@@ -54,9 +60,7 @@ const counterOfIterations = (iteration, userName) => {
 };
 
 export {
-  welcomeMessage,
-  getUserName,
-  greetingUser,
+  showStartingMessage,
   getRandomNumber,
   getUserAnswer,
   checkCorrectnessOfUserAnswer,

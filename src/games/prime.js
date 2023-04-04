@@ -1,7 +1,5 @@
 import {
-  welcomeMessage,
-  getUserName,
-  greetingUser,
+  showStartingMessage,
   getRandomNumber,
   getUserAnswer,
   checkCorrectnessOfUserAnswer,
@@ -34,10 +32,7 @@ const getCorrectAnswer = (randomNumber) => {
 
 // Сама игра
 const startGame = () => {
-  console.log(welcomeMessage);
-  const userName = getUserName();
-  greetingUser(userName);
-  console.log(gameRules);
+  const userName = showStartingMessage(gameRules);
 
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomNumber(2, 50);
