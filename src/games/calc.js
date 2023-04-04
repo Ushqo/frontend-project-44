@@ -11,7 +11,7 @@ import {
 const gameRules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
-// Функция которые счиатет выражение
+// Функция которые считает выражение
 const getResultOfExpression = (num1, num2, operator) => {
   switch (operator) {
     case '+':
