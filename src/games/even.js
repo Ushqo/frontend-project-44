@@ -8,7 +8,7 @@ import {
   counterOfIterations,
 } from '../index.js';
 
-const gameRules = 'Answer "yes" if number is even, otherwise answer "no".';
+const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 // Проверка на четность
 const isEven = (number) => {
