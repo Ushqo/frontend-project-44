@@ -13,9 +13,6 @@ const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".
 
 // Проверка является ли число простым
 const isPrime = (number) => {
-  if (number === 1) {
-    return false;
-  }
   if (number === 2) {
     return true;
   }
@@ -43,7 +40,7 @@ const startGame = () => {
   console.log(gameRules);
 
   for (let i = 0; i < 3; i += 1) {
-    const randomNumber = getRandomNumber(0, 50);
+    const randomNumber = getRandomNumber(2, 50);
     console.log(`Question: ${randomNumber}`);
     const userAnswer = getUserAnswer();
     if (checkCorrectnessOfUserAnswer(userAnswer, userName)) {
