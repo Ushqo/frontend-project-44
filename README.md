@@ -30,3 +30,13 @@ $ brain-calc
 
 [![asciicast](https://asciinema.org/a/K55UxcTHoywXyFJiDcxgx4Y5W.svg)](https://asciinema.org/a/K55UxcTHoywXyFJiDcxgx4Y5W)
 [![asciicast](https://asciinema.org/a/m7U7kkKdSy5Ry2bXqSukgQwjr.svg)](https://asciinema.org/a/m7U7kkKdSy5Ry2bXqSukgQwjr)
+
+#### Brain-gcd
+****
+
+```sh
+$ brain-gcd
+```
+
+[![asciicast](https://asciinema.org/a/eMtxTanhiqIS3Klj1ozxl1ASp.svg)](https://asciinema.org/a/eMtxTanhiqIS3Klj1ozxl1ASp)
+[![asciicast](https://asciinema.org/a/Qs8m3XXnb654w9petJYOOqks8.svg)](https://asciinema.org/a/Qs8m3XXnb654w9petJYOOqks8)
