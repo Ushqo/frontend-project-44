@@ -50,3 +50,13 @@ $ brain-progression
 
 [![asciicast](https://asciinema.org/a/dwhtevThtFgLunN3hckhWbwyy.svg)](https://asciinema.org/a/dwhtevThtFgLunN3hckhWbwyy)
 [![asciicast](https://asciinema.org/a/g9Mr9n4ubZfiRzI0TcVHWvfyD.svg)](https://asciinema.org/a/g9Mr9n4ubZfiRzI0TcVHWvfyD)
+
+#### Brain-prime
+****
+
+```sh
+$ brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/k0ZbSFQdfq5xb7gJQPDajgORO.svg)](https://asciinema.org/a/k0ZbSFQdfq5xb7gJQPDajgORO)
+[![asciicast](https://asciinema.org/a/50jFMpLfLp9JA9I712Mg17IUB.svg)](https://asciinema.org/a/50jFMpLfLp9JA9I712Mg17IUB)
