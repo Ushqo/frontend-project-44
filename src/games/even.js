@@ -28,7 +28,7 @@ const getCorrectAnswer = (randomNumber) => {
 const checkCorrectnessOfUserAnswer = (userAnswer, userName) => {
   if ((userAnswer !== 'yes') && (userAnswer !== 'no')) {
     console.log('Not correct answer! You must answer "yes" or "no"!');
-    console.log(`Let's try again, ${userName}`);
+    console.log(`Let's try again, ${userName}!`);
     return true;
   }
   return false;
