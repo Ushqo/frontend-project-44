@@ -1,6 +1,6 @@
 # Brain Games
 
-### Description
+## Description
 The project is a small command-line application. 5 small games are implemented to entertain the user. This is:
 * [Parity check](#parity-check) - prompts the user to guess whether the number is even or not.
 * [Calculator](#calculator) - a random expression of two numbers is output to the terminal, and the user must guess the result of this expression.
@@ -9,11 +9,19 @@ The project is a small command-line application. 5 small games are implemented t
 * [Is it a prime number?](#is-it-a-prime-number) - the user needs to find out and give an answer whether the number proposed by the program is prime.
 
 
-### Hexlet tests and linter status:
+## Hexlet tests and linter status:
 [![Actions Status](https://github.com/Ushqo/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Ushqo/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/39883ad115954a7af4ac/maintainability)](https://codeclimate.com/github/Ushqo/frontend-project-44/maintainability)
 
-### Installation
+## Requirements for the working environment
+To run the application, you need to have an installed Node.js version of at least 17.6
+You can check the Node.js version with the command
+
+```sh
+$ node --version
+```
+
+## Installation
 
 ```sh
 $ npm install brain-games
@@ -21,9 +29,9 @@ $ npm install brain-games
 
 [![asciicast](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol.svg)](https://asciinema.org/a/trBX1N2orM4oKqF7KVUUyvqol)
 
-### Launch
+## Launch
 
-#### Parity-Check
+### Parity-Check
 
 ```sh
 $ brain-even
@@ -31,7 +39,7 @@ $ brain-even
 
 [![asciicast](https://asciinema.org/a/LFYmAuuDMQYDwmoMaZVYPDD2P.svg)](https://asciinema.org/a/LFYmAuuDMQYDwmoMaZVYPDD2P)
 
-#### Calculator
+### Calculator
 
 ```sh
 $ brain-calc
@@ -39,7 +47,7 @@ $ brain-calc
 
 [![asciicast](https://asciinema.org/a/K55UxcTHoywXyFJiDcxgx4Y5W.svg)](https://asciinema.org/a/K55UxcTHoywXyFJiDcxgx4Y5W)
 
-#### Greatest common divisor
+### Greatest common divisor
 
 ```sh
 $ brain-gcd
@@ -47,7 +55,7 @@ $ brain-gcd
 
 [![asciicast](https://asciinema.org/a/2iNatcRSiaGxxXlwsgoWJQTCS.svg)](https://asciinema.org/a/2iNatcRSiaGxxXlwsgoWJQTCS)
 
-#### Arithmetic progression
+### Arithmetic progression
 
 ```sh
 $ brain-progression
@@ -55,7 +63,7 @@ $ brain-progression
 
 [![asciicast](https://asciinema.org/a/dwhtevThtFgLunN3hckhWbwyy.svg)](https://asciinema.org/a/dwhtevThtFgLunN3hckhWbwyy)
 
-#### Is it a prime number?
+### Is it a prime number?
 
 ```sh
 $ brain-prime
