@@ -14,7 +14,7 @@ The project is a small command-line application. Five small games are implemente
 [![Maintainability](https://api.codeclimate.com/v1/badges/39883ad115954a7af4ac/maintainability)](https://codeclimate.com/github/Ushqo/frontend-project-44/maintainability)
 
 ## Requirements for the working environment
-To run the application, you need to have an installed Node.js version of at least 17.6
+To run the application, you need to have an installed Node.js version of at least ***17.6***.
 You can check the Node.js version with the command
 
 ```sh
