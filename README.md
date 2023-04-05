@@ -1,11 +1,11 @@
 # Brain Games
 
 ## Description
-The project is a small command-line application. 5 small games are implemented to entertain the user. This is:
+The project is a small command-line application. Five small games are implemented to entertain the user. This is:
 * [Parity check](#parity-check) - prompts the user to guess whether the number is even or not.
 * [Calculator](#calculator) - a random expression of two numbers is output to the terminal, and the user must guess the result of this expression.
-* [Greatest common divisor](#greatest-common-divisor) - 2 random numbers are also output to the terminal, and the user needs to find the greatest common divisor for them.
-* [Arithmetic progression](#arithmetic-progression) is a mini-game in which you need to guess the missing element in the arithmetic progression.
+* [Greatest common divisor](#greatest-common-divisor) - two random numbers are also output to the terminal, and the user needs to find the greatest common divisor for them.
+* [Arithmetic progression](#arithmetic-progression) - a mini-game in which you need to guess the missing element in the arithmetic progression.
 * [Is it a prime number?](#is-it-a-prime-number) - the user needs to find out and give an answer whether the number proposed by the program is prime.
 
 
