@@ -1,15 +1,9 @@
-import {
-  showStartingMessage,
-  getRandomNumber,
-  getUserAnswer,
-  checkUserAnswer,
-  counterOfIterations,
-} from '../index.js';
+import startGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
-// Функция которые считает выражение
-const getResultOfExpression = (num1, num2) => {
+const getCorrectAnswer = (num1, num2) => {
   let number1 = num1;
   let number2 = num2;
 
@@ -23,27 +17,15 @@ const getResultOfExpression = (num1, num2) => {
   return number1;
 };
 
-// Функция c выражением которое показыввется пользователю
-const showExpression = (number1, number2) => {
-  const result = `${number1} ${number2}`;
-  return result;
+const getGameData = () => {
+  const randomNumber1 = getRandomNumber(1, 100);
+  const randomNumber2 = getRandomNumber(1, 100);
+  const gameQuestion = `${randomNumber1} ${randomNumber2}`;
+  const correctAnswer = String(getCorrectAnswer(randomNumber1, randomNumber2));
+  const gameData = { gameQuestion, correctAnswer };
+  return gameData;
 };
 
-// Сама игра
-const startGame = () => {
-  const userName = showStartingMessage(gameRules);
+const startBrainGsd = () => startGame(gameRules, getGameData);
 
-  for (let i = 0; i < 3; i += 1) {
-    const randomNumber1 = getRandomNumber(1, 100);
-    const randomNumber2 = getRandomNumber(1, 100);
-    console.log(`Question: ${showExpression(randomNumber1, randomNumber2)}`);
-    const userAnswer = Number(getUserAnswer());
-    const correctAnswer = getResultOfExpression(randomNumber1, randomNumber2);
-    if (!checkUserAnswer(userAnswer, correctAnswer, userName)) {
-      break;
-    }
-    counterOfIterations(i, userName);
-  }
-};
-
-export default startGame;
+export default startBrainGsd;

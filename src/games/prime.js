@@ -1,20 +1,19 @@
-import {
-  showStartingMessage,
-  getRandomNumber,
-  getUserAnswer,
-  checkCorrectnessOfUserAnswer,
-  checkUserAnswer,
-  counterOfIterations,
-} from '../index.js';
+import startGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-// Проверка является ли число простым
 const isPrime = (number) => {
+  if (number === 0) {
+    return false;
+  }
+  if (number === 1) {
+    return false;
+  }
   if (number === 2) {
     return true;
   }
-  for (let i = 2; i < number; i += 1) {
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -22,7 +21,6 @@ const isPrime = (number) => {
   return true;
 };
 
-// Присваивание верного ответа для дальнейшего сравнивания с ответом пользователя
 const getCorrectAnswer = (randomNumber) => {
   if (isPrime(randomNumber)) {
     return 'yes';
@@ -30,23 +28,14 @@ const getCorrectAnswer = (randomNumber) => {
   return 'no';
 };
 
-// Сама игра
-const startGame = () => {
-  const userName = showStartingMessage(gameRules);
-
-  for (let i = 0; i < 3; i += 1) {
-    const randomNumber = getRandomNumber(2, 50);
-    console.log(`Question: ${randomNumber}`);
-    const userAnswer = getUserAnswer();
-    if (checkCorrectnessOfUserAnswer(userAnswer, userName)) {
-      break;
-    }
-    const correctAnswer = getCorrectAnswer(randomNumber);
-    if (!checkUserAnswer(userAnswer, correctAnswer, userName)) {
-      break;
-    }
-    counterOfIterations(i, userName);
-  }
+const getGameData = () => {
+  const randomNumber1 = getRandomNumber(0, 50);
+  const gameQuestion = `${randomNumber1}`;
+  const correctAnswer = getCorrectAnswer(randomNumber1);
+  const gameData = { gameQuestion, correctAnswer };
+  return gameData;
 };
 
-export default startGame;
+const startBrainPrime = () => startGame(gameRules, getGameData);
+
+export default startBrainPrime;

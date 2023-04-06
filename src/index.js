@@ -1,39 +1,7 @@
 import readlineSync from 'readline-sync';
 
-// Функция спрашивает и возвращает имя пользователя
-const getUserName = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  return userName;
-};
+const numberOfRoudns = 3;
 
-// Функция приветствует пользователя по имени
-const greetingUser = (userName) => {
-  console.log(`Hello, ${userName}!`);
-};
-
-// Функция возвращает случайное число в заданном интервале
-const getRandomNumber = (min, max) => {
-  const randomNumber = Math.floor(Math.random() * (max - min) + min);
-  return randomNumber;
-};
-
-// Функция запроса ответа от пользователя
-const getUserAnswer = () => {
-  const userAnswer = readlineSync.question('You answer: ');
-  return userAnswer;
-};
-
-// Отдельная функция на верность формата ввода ответа пользователя
-const checkCorrectnessOfUserAnswer = (userAnswer, userName) => {
-  if ((userAnswer !== 'yes') && (userAnswer !== 'no')) {
-    console.log('Not correct answer! You must answer "yes" or "no"!');
-    console.log(`Let's try again, ${userName}`);
-    return true;
-  }
-  return false;
-};
-
-// Функция проверки ответа пользователя и реакции на его ответ
 const checkUserAnswer = (userAnswer, correctAnswer, userName) => {
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
@@ -44,26 +12,28 @@ const checkUserAnswer = (userAnswer, correctAnswer, userName) => {
   return false;
 };
 
-const showStartingMessage = (rules) => {
+const startGame = (gameRules, getGameData) => {
   console.log('Welcome to the Brain Games!');
-  const userName = getUserName();
-  greetingUser(userName);
-  console.log(rules);
-  return userName;
-};
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log(gameRules);
 
-// Функция счётчик с поздравлениями
-const counterOfIterations = (iteration, userName) => {
-  if (iteration === 2) {
-    console.log(`Congratulations, ${userName}!`);
+  for (let i = 1; i <= numberOfRoudns; i += 1) {
+    const gameData = getGameData();
+    const { gameQuestion, correctAnswer } = gameData;
+
+    console.log(`Question: ${gameQuestion}`);
+
+    const userAnswer = readlineSync.question('You answer: ');
+
+    if (!checkUserAnswer(userAnswer, correctAnswer, userName)) {
+      break;
+    }
+
+    if (i === numberOfRoudns) {
+      console.log(`Congratulations, ${userName}!`);
+    }
   }
 };
 
-export {
-  showStartingMessage,
-  getRandomNumber,
-  getUserAnswer,
-  checkCorrectnessOfUserAnswer,
-  checkUserAnswer,
-  counterOfIterations,
-};
+export default startGame;
