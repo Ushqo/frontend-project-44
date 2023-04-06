@@ -29,9 +29,9 @@ const getCorrectAnswer = (randomNumber) => {
 };
 
 const getGameData = () => {
-  const randomNumber1 = getRandomNumber(0, 50);
-  const gameQuestion = `${randomNumber1}`;
-  const correctAnswer = getCorrectAnswer(randomNumber1);
+  const randomNumber = getRandomNumber(0, 50);
+  const gameQuestion = `${randomNumber}`;
+  const correctAnswer = getCorrectAnswer(randomNumber);
   const gameData = { gameQuestion, correctAnswer };
   return gameData;
 };
