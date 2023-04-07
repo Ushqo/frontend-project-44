@@ -2,16 +2,6 @@ import readlineSync from 'readline-sync';
 
 const numberOfRoudns = 3;
 
-const checkUserAnswer = (userAnswer, correctAnswer, userName) => {
-  if (userAnswer === correctAnswer) {
-    console.log('Correct!');
-    return true;
-  }
-  console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-  console.log(`Let's try again, ${userName}!`);
-  return false;
-};
-
 const startGame = (gameRules, getGameData) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
@@ -26,9 +16,11 @@ const startGame = (gameRules, getGameData) => {
 
     const userAnswer = readlineSync.question('You answer: ');
 
-    if (!checkUserAnswer(userAnswer, correctAnswer, userName)) {
-      break;
+    if (userAnswer !== correctAnswer) {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
     }
+    console.log('Correct!');
 
     if (i === numberOfRoudns) {
       console.log(`Congratulations, ${userName}!`);
