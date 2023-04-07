@@ -4,11 +4,8 @@ import getRandomNumber from '../utils.js';
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (number === 0 || number === 1) {
+  if (number < 2) {
     return false;
-  }
-  if (number === 2) {
-    return true;
   }
   for (let i = 2; i <= Math.sqrt(number); i += 1) {
     if (number % i === 0) {
@@ -18,17 +15,10 @@ const isPrime = (number) => {
   return true;
 };
 
-const getCorrectAnswer = (randomNumber) => {
-  if (isPrime(randomNumber)) {
-    return 'yes';
-  }
-  return 'no';
-};
-
 const getGameData = () => {
   const randomNumber = getRandomNumber(0, 50);
   const gameQuestion = `${randomNumber}`;
-  const correctAnswer = getCorrectAnswer(randomNumber);
+  const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   const gameData = { gameQuestion, correctAnswer };
   return gameData;
 };
