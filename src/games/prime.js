@@ -1,7 +1,7 @@
 import startGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -23,6 +23,6 @@ const getGameData = () => {
   return gameData;
 };
 
-const startBrainPrime = () => startGame(gameRules, getGameData);
+const startBrainPrime = () => startGame(gameRule, getGameData);
 
 export default startBrainPrime;

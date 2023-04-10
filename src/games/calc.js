@@ -1,7 +1,7 @@
 import startGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const gameRules = 'What is the result of the expression?';
+const gameRule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const getResultOfExpression = (num1, num2, operator) => {
@@ -27,6 +27,6 @@ const getGameData = () => {
   return gameData;
 };
 
-const startBrainCalc = () => startGame(gameRules, getGameData);
+const startBrainCalc = () => startGame(gameRule, getGameData);
 
 export default startBrainCalc;
