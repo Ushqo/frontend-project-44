@@ -22,11 +22,9 @@ const startGame = (gameRules, getGameData) => {
       return;
     }
     console.log('Correct!');
-
-    if (i === numberOfRoudns) {
-      console.log(`Congratulations, ${userName}!`);
-    }
   }
+
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default startGame;
