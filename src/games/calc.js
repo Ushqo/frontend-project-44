@@ -5,13 +5,16 @@ const gameRule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const getResultOfExpression = (num1, num2, operator) => {
-  if (operator === '+') {
-    return num1 + num2;
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      throw new Error(`Unknown '${operator}'!`);
   }
-  if (operator === '-') {
-    return num1 - num2;
-  }
-  return num1 * num2;
 };
 
 const getGameData = () => {
